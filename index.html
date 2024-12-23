@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Explore online Resturants</title>
+</head>
+<body>
+    <h1 class="text-center text-3xl text-blue-500 font-semibold my-2">Search Your Favarite food here</h1>
+    <div class="flex justify-center my-3">
+      
+       <div>
+            <input id="search-input" class="border-2 border-blue-600 rounded p-2" type="text" placeholder="Search you food here">
+            <button id="search-button" class="px-3 py-2 border-2 border-blue-600 rounded">Search</button>
+       </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-5 mx-5" id="categories"></div>
+
+    <div id="error" class="error text-center text-red-500">Something went wrong!!!! Please try again</div>
+
+    <!-- single food -->
+
+    <div class="mx-5" id="display-single-food">
+       
+    </div>
+
+    <!-- dekhanor kaj korbo -->
+    <div class="grid grid-cols-3 gap-5 mx-5" id="search-display">
+       
+    </div>
+    
+    <script src="./js/search.js"></script>
+</body>
+</html>
